@@ -1,20 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>My First Site</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>fey momodu | personal site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- connect CSS file -->
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <h1>hello, world 👋🏾</h1>
-  <p>this is my first site with html, css, and javascript.</p>
+  <body>
 
-  <button id="clickMeBtn">click me</button>
-  <p id="message"></p>
+    <!-- GREEN TOP BAR WITH NAV -->
+    <header class="banner">
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">photography</a></li>
+          <li><a href="#">3d modeling</a></li>
+          <li><a href="#">websites</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <!-- connect JS file -->
-  <script src="script.js"></script>
-</body>
+    <!-- CUTE DIVIDER SECTION -->
+
+    <!--  <div class="banner-divider">꧁⎝°⛧⋆𓆩༺♱༻𓆪⋆°⛧s⎠꧂</div> -->
+ 
+
+    <!-- MAIN BODY CONTENT (WHITE BACKGROUND) -->
+    <main class="page">
+
+        <!-- intro / hero section -->
+    <section class="intro">
+      <h1>Favour Momodu</h1>
+      <h2>web programmer <span class="accent">+</span> designer</h2>
+      <h4>creative technologist</h4>
+    
+
+
+    <!-- scroll hint -->
+    <div class="scroll-hint">
+        <!-- this text tells the user there is more content below -->
+        <span>scroll</span>
+        <span class="arrow">↓</span>
+    </div>
+    </section>
+
+     <!-- web dev section -->
+    <section id="web-dev" class ="projects">
+        <h2> Web Dev Experience</h2>
+
+        <!-- row 1: personal site -->
+        <div class="project-row">
+            <article class="project">
+            <h3>personal site</h3>
+            <p>which youre on right now... hand-coded with html, css and javascript</p>
+            <a href="#" target="_blank" rel="noopener noreferrer">go to homepage</a>
+        </article>
+
+        <!-- right: screenshot + dark green overlap bar -->
+        <div class="project-image">
+            <div class="preview-bg"></div>
+            <img src="p-image.png" alt="website preview">
+        </div>
+    </div> <!-- row 1 closed here-->
+
+
+
+       <!-- row 2: golf site -->
+    <div class="project-row reverse">
+        <article class="project">
+            <h3> golf site</h3>
+            <p>golf website for client</p>
+            <a href="https://www.golfbackspin.com/" target="_blank" rel="noopener noreferrer">view live site
+
+            </a>
+        </article>
+            
+
+            <!-- right: screenshot + dark green overlap bar -->
+            <div class="project-image">
+            <div class="preview-bg"></div>
+            <img src="g-image.png" alt="website preview">
+        </div>
+    </div> <!--row 2 closed-->
+
+    </section>
+
+      <button id="clickMeBtn">contact me</button>
+      <p id="message"></p>
+    </main>
+
+    
+
+    <script src="script.js"></script>
+  </body>
 </html>
