@@ -3,15 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <title>fey momodu | personal site</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-
-    <!-- GREEN TOP BAR WITH NAV -->
     <header class="banner">
       <nav>
         <ul>
@@ -24,76 +25,122 @@
       </nav>
     </header>
 
-    <!-- CUTE DIVIDER SECTION -->
-
-    <!--  <div class="banner-divider">꧁⎝°⛧⋆𓆩༺♱༻𓆪⋆°⛧s⎠꧂</div> -->
- 
-
-    <!-- MAIN BODY CONTENT (WHITE BACKGROUND) -->
     <main class="page">
+      <section class="intro">
+        <h1>Favour Momodu</h1>
+        <h2>web programmer <span class="accent">+</span> designer</h2>
+        <h4>creative technologist</h4>
 
-        <!-- intro / hero section -->
-    <section class="intro">
-      <h1>Favour Momodu</h1>
-      <h2>web programmer <span class="accent">+</span> designer</h2>
-      <h4>creative technologist</h4>
-    
+        <div class="scroll-hint">
+          <span>scroll</span>
+          <span class="arrow">↓</span>
+        </div>
+      </section>
 
+      <section id="web-dev" class="projects">
+        <h2>Selected Work</h2>
 
-    <!-- scroll hint -->
-    <div class="scroll-hint">
-        <!-- this text tells the user there is more content below -->
-        <span>scroll</span>
-        <span class="arrow">↓</span>
-    </div>
-    </section>
-
-     <!-- web dev section -->
-    <section id="web-dev" class ="projects">
-        <h2> Web Dev Experience</h2>
-
-        <!-- row 1: personal site -->
         <div class="project-row">
-            <article class="project">
+          <article class="project">
             <h3>personal site</h3>
             <p>which youre on right now... hand-coded with html, css and javascript</p>
             <a href="#" target="_blank" rel="noopener noreferrer">go to homepage</a>
-        </article>
+          </article>
 
-        <!-- right: screenshot + dark green overlap bar -->
-        <div class="project-image">
+          <div class="project-image">
             <div class="preview-bg"></div>
-            <img src="p-image.png" alt="website preview">
+            <img src="p-image.png" alt="website preview" />
+          </div>
         </div>
-    </div> <!-- row 1 closed here-->
 
-
-
-       <!-- row 2: golf site -->
-    <div class="project-row reverse">
-        <article class="project">
-            <h3> golf site</h3>
+        <div class="project-row reverse">
+          <article class="project">
+            <h3>golf site</h3>
             <p>golf website for client</p>
-            <a href="https://www.golfbackspin.com/" target="_blank" rel="noopener noreferrer">view live site
-
+            <a href="https://www.golfbackspin.com/" target="_blank" rel="noopener noreferrer">
+              view live site
             </a>
-        </article>
-            
+          </article>
 
-            <!-- right: screenshot + dark green overlap bar -->
-            <div class="project-image">
+          <div class="project-image">
             <div class="preview-bg"></div>
-            <img src="g-image.png" alt="website preview">
+            <img src="g-image.png" alt="golf website preview" />
+          </div>
         </div>
-    </div> <!--row 2 closed-->
 
-    </section>
+        <div class="project-row shirt-row">
+  <article class="project">
+    <h3>bcc t-shirt design</h3>
+    <p>
+      concept design for Purdue's Black Cultural Center t-shirt, inspired by growth,
+      roots, and community.
+    </p>
+  </article>
+
+  <div class="project-image">
+    <div class="preview-bg"></div>
+    <img src="portfolio/t-shirt.JPG" alt="bcc shirt design">
+  </div>
+</div>
+
+
+        <div class="zine-section">
+          <article class="project zine-text">
+            <h3>make room for love - editorial zine</h3>
+            <p>
+              a visual zine exploring love, identity, and emotional awareness through
+              typography, photography, and collage-style layouts.
+            </p>
+          </article>
+
+          <div class="zine-preview">
+            <div class="zine-gallery">
+              <img src="portfolio/BTC Zine for Love (1)/Cover Page.png" alt="zine cover" />
+              <img src="portfolio/BTC Zine for Love (1)/32.png" alt="zine collage" />
+              <img src="portfolio/BTC Zine for Love (1)/42.png" alt="queer love" />
+              <img src="portfolio/BTC Zine for Love (1)/45.png" alt="break the cycle" />
+
+              <div class="zine-center">
+♡<br>
+  all photos + design<br>
+  by yours truly
+</div>
+
+              <img src="portfolio/BTC Zine for Love (1)/47.png" alt="love quote" />
+
+              
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <section class="projects">
+  <h2>Visual Work</h2>
+
+  <div class="project-row">
+    <article class="project">
+      <h3>qsoc identity concept</h3>
+      <p>
+        logo concept for Purdue’s Queer Students of Color, exploring bold identity,
+        color, and community representation.
+      </p>
+    </article>
+
+    <div class="project-image">
+      <div class="preview-bg"></div>
+      <img src="portfolio/QSOC Logo-test.png" alt="qsoc logo design">
+    </div>
+  </div>
+</section>
+
+
 
       <button id="clickMeBtn">contact me</button>
       <p id="message"></p>
     </main>
-
-    
 
     <script src="script.js"></script>
   </body>
