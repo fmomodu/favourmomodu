@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>contact | Favour Momodu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="contact-page">
+    <header class="banner">
+  <nav>
+    <ul>
+      <li><a href="index.html">home</a></li>
+      <li><a href="#">photography</a></li>
+      <li><a href="#">websites</a></li>
+       <li><a href="#">all about me</a></li>
+      <li><a href="contact.html">contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main class="page">
+    <section class="contact-section">
+      <h1>let’s connect</h1>
+
+      <p class="contact-intro">
+        if you want to work together, collaborate, or just say hi —
+        send me a message
+      </p>
+
+      <form class="contact-form" id="contact-form">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required />
+
+        <fieldset class="contact-fieldset">
+          <legend>what are you reaching out about?</legend>
+
+          <label class="radio-option">
+            <input type="radio" name="inquiry_type" value="design work" required />
+            design work
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="inquiry_type" value="web project" />
+            web project
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="inquiry_type" value="collab" />
+            collab
+          </label>
+
+          <label class="radio-option">
+            <input type="radio" name="inquiry_type" value="other" />
+            other
+          </label>
+        </fieldset>
+
+        <label for="message">message</label>
+        <textarea id="message" name="message" rows="6"></textarea>
+
+        <button type="submit">send</button>
+        <p id="form-status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
