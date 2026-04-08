@@ -252,7 +252,17 @@ button:hover {
   color: #cde7d4;
   padding: 24px;
   border-radius: 16px;
+
   text-align: center;
+
+  display: grid;
+  place-items: center;
+
+  
+  font-size: 1.6rem;
+  line-height: 1.35;
+
+
 }
 
 /* SHIRT */
