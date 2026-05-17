@@ -35,6 +35,7 @@ body {
 .banner nav ul {
   list-style: none;
   display: flex;
+  gap: 12px;
   margin: 0;
   padding: 0;
 }
@@ -68,9 +69,9 @@ body {
 
 .intro h1 {
   font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  font-size: 4.3rem;
   color: #4b1230;
-  margin-bottom: 0;
+  font-size: 4rem;
+  margin-bottom: 2rem;
 }
 
 .intro h1,
@@ -119,9 +120,15 @@ body {
 /* PROJECTS */
 
 .projects h2 {
-  padding-top: 4rem;
-  font-size: 1.5rem;
-  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    color: #4b1230;
+
+    margin-top: 3rem;
+
+    margin-bottom: 0.75rem;
+
+    font-size: 1.5rem;
 }
 
 .project {
@@ -359,7 +366,7 @@ body.contact-page {
 }
 
 .contact-fieldset {
-  border: 1px solid rgba(122, 161, 108, 0.35);
+  border: 1px solid rgba(18, 36, 12, 0.588);
   border-radius: 12px;
   padding: 12px;
 }
@@ -398,4 +405,87 @@ body.contact-page {
   margin-top: 10px;
   color: #7aa16c;
   min-height: 1.2em;
+}
+
+
+/* PHOTOGRAPHY PAGE */
+
+body.photography-page {
+  background: #2b1024;
+  color: whitesmoke;
+}
+
+.photography-page .banner {
+  background: #2b1024;
+}
+
+.photography-page .banner nav ul li a {
+  color: #7aa16c;
+}
+
+.photography-page .banner nav ul li:not(:last-child)::after {
+  color: whitesmoke;
+}
+
+.photography-page .banner nav ul li a:hover {
+  color: whitesmoke;
+}
+
+.photography-page .page {
+  max-width: 1200px;
+}
+
+.photography-page h1 {
+  font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  color: #7aa16c;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.photography-page p {
+  color: #4b1230;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.photo-wrapper {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.portfolio-photo {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 28px;
+  box-shadow: 18px 18px 0 #4b1230;
+}
+
+
+
+@media (max-width: 768px) {
+  .photo-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-photo {
+    height: 420px;
+  }
+
+  .photography-page h1 {
+    font-size: 3rem;
+  }
+}
+.photography-page .coming-soon > p {
+  opacity: 1;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+
+  text-shadow:
+    0 0 12px rgba(155, 191, 135, 0.35),
+    1px 1px 0 #4b1230;
 }
