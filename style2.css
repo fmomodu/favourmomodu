@@ -99,14 +99,7 @@ body {
   display: block;
 }
 
-.portfolio-photo {
-    width: 450px;
-    height: 500px;
-    object-fit: cover;
-    object-position: center;
-  border-radius: 30px;
 
-}
 
 /* LOWER SECTIONS */
 
@@ -156,6 +149,13 @@ body {
   .banner {
     padding: 20px 24px;
   }
+  .banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: inherit;
+  padding: 20px;
+}
 
   .banner nav ul {
     flex-wrap: wrap;
@@ -185,4 +185,10 @@ body {
     text-align: left;
     margin-top: 65px;
   }
+}
+.banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: #7aa16c;
 }

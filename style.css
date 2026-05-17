@@ -25,6 +25,13 @@ body {
   background: #7aa16c;
   padding: 20px 20px;
 }
+.banner {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: inherit;
+  padding: 20px;
+}
 
 .banner nav {
   display: flex;
@@ -488,4 +495,11 @@ body.photography-page {
   text-shadow:
     0 0 12px rgba(155, 191, 135, 0.35),
     1px 1px 0 #4b1230;
+}
+.photography-page .banner {
+  background: #2b1024;
+}
+
+.contact-page .banner {
+  background: #4b1230;
 }
