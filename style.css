@@ -503,3 +503,32 @@ body.photography-page {
 .contact-page .banner {
   background: #4b1230;
 }
+
+.backspin-row {
+  margin-top: 70px;
+}
+
+.backspin-card {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.backspin-preview img {
+  object-position: top;
+}
+
+.backspin-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  max-width: 800px;
+  margin: 20px auto 80px;
+}
+
+.backspin-gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 14px;
+  box-shadow: 12px 12px 0 rgba(0, 35, 7, 0.55);
+}
